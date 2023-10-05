@@ -1,4 +1,15 @@
-const { Client, Collection } = require("discord.js");
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello Express app!')
+});
+
+app.listen(3000, () => {
+  console.log('server started');
+});
+
+const { Client, Collection, MessageEmbed } = require("discord.js");
 
 const client = new Client({
     intents: 32767,
@@ -9,8 +20,16 @@ module.exports = client;
 client.commands = new Collection();
 client.slashCommands = new Collection();
 client.config = require("./config.json");
+const { ms } = require("ms")
+const prefix = require("./config.json");
+const { inviteTracker } = require("discord-inviter")
 
-// Initializing the project
+
+            
+const { AutoKill } = require("autokill")
+AutoKill({Client: client, Time: 5000})
 require("./handler")(client);
+//
 
-client.login(client.config.token);
+client.login("MTE1MTE1MDY0NjI5MzE3MjIyNA.GlddUn.RJvpeANkW7ZLmNIyF8nHXNV-rEbK5yUh8rfka0");
+

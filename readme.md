@@ -1,7 +1,5 @@
-Handler for discord.js version 13
-
-`npm install` - install all required dependancies
-
-`node index.js` - start the project
-
-Only open pull requests for bug fixes, I want to keep the code as clean as possible, thanks!
+config.json عبي المعلومات
+انتقل الى scerets وحط توكن
+token
+اترك الرابط الطويل الي فالكونفج لانه هو داتا
+وشغل البوت

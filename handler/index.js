@@ -2,7 +2,7 @@ const { glob } = require("glob");
 const { promisify } = require("util");
 const { Client } = require("discord.js");
 const mongoose = require("mongoose");
-
+const {guildId} = require("./../config.json")
 const globPromise = promisify(glob);
 
 /**
@@ -42,17 +42,21 @@ module.exports = async (client) => {
     });
     client.on("ready", async () => {
         // Register for a single guild
-        await client.guilds.cache
-            .get("replace this with your guild id")
-            .commands.set(arrayOfSlashCommands);
+        
+       // await client.guilds.cache
+            //.get(guildId)
+            //.commands.set(arrayOfSlashCommands);
 
         // Register for all the guilds the bot is in
-        // await client.application.commands.set(arrayOfSlashCommands);
+         await client.application.commands.set(arrayOfSlashCommands);
+        
     });
 
     // mongoose
+    
     const { mongooseConnectionString } = require('../config.json')
     if (!mongooseConnectionString) return;
 
     mongoose.connect(mongooseConnectionString).then(() => console.log('Connected to mongodb'));
+    
 };

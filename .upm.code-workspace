@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "../.upm"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../events"
+		},
+		{
+			"path": "../models"
+		},
+		{
+			"path": "../handler"
+		},
+		{
+			"path": "../commands"
+		},
+		{
+			"path": "../.config"
+		},
+		{
+			"path": "../.cache"
+		},
+		{
+			"path": "../SlashCommands"
+		},
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "../utils"
+		},
+		{
+			"path": "../.github"
+		}
+	]
+}

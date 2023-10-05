@@ -1,4 +1,5 @@
 const client = require("../index");
+const ch = ["959818076851945472","959818210146918430","959818237074341939","959818963045449788","962829306571161691"] 
 
 client.on("messageCreate", async (message) => {
     if (
@@ -17,4 +18,6 @@ client.on("messageCreate", async (message) => {
 
     if (!command) return;
     await command.run(client, message, args);
+    
+    
 });

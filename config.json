@@ -1,5 +1,15 @@
 {
-    "token": "your bot's token",
-    "prefix": "!",
-    "mongooseConnectionString": ""
+    
+    "prefix": "=", 
+    "dev": ["919177836605108264","603657477648678925"], 
+ 
+    "idrole": "ايدي رول وزاره الداخليه",
+    
+     "mongooseConnectionString": "mongodb+srv://Abo7meed:0544531221r@cluster0.7fiagbm.mongodb.net/?retryWrites=true&w=majority",
+    "idroleAdmin": "ايدي الي يكشف عن تسجيلات",
+    "guildId": "ايدي السيرفر",
+     "everyoneId": "1143244950897705150",
+    "parentId": "1143248226225491998",
+    "openTicket": "1143248169736609912",
+    "transcript": "1143248169736609912"
 }
